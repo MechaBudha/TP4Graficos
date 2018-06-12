@@ -4,3 +4,4 @@ Release
 debug
 release
 *.snl
+\.vs\
