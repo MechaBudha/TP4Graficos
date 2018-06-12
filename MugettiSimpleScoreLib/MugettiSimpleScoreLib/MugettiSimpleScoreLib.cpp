@@ -79,7 +79,7 @@ bool MugettiSimpleScoreLib::GetPositionScore(int position, int&score, char* name
 	if (position >= 1 && position<=BOARDTAM){
 		score = _ScoreTable[position].sco;
 		for (int i = 0; i < NOMTAM; i++){
-			*name[i] = _ScoreTable[position].nom[i];
+			*name[i] = _ScoreTable[position-1].nom[i];
 		}
 		return true;
 	}else{return false;}
