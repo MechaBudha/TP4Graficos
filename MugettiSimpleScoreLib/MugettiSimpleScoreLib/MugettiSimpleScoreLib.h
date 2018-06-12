@@ -11,21 +11,18 @@ struct Score
 };
 class MugettiSimpleScoreLib
 {
-	Score _CurScore;
 	Score _ScoreTable[BOARDTAM];
 
-	void Sort();
+	bool Sort(Score actual);
 public:
 	MugettiSimpleScoreLib();
 	void Init();
 	bool RecordCurrentScore(int score, char name[NOMTAM]);
 	void GetMaxScore(int& score, char* name[NOMTAM]);
-	void GetCurrentScore(int& score, char* name[NOMTAM]);
-	int GetPlayerPositionByScore();
-	int GetPlayerPositionByName();
-	Bool GetPositionScore();
-	int GetMinPosition() { return BOARDTAM; };
-	int GetMaxPosition() { return 1; };
+	bool GetPlayerPositionByScore(int score, int& position);
+	bool GetPlayerPositionByName(char name[NOMTAM], int& position);
+	bool GetPositionScore(int position, int&score, char* name[NOMTAM]);
+	int GetScoreBoardSize() { return BOARDTAM; }
 	~MugettiSimpleScoreLib();
 };
 #endif // !SCORELIB_H
