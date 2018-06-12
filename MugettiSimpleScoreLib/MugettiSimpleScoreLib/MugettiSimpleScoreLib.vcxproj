@@ -115,6 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MugettiSimpleScoreLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MugettiSimpleScoreLib.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
