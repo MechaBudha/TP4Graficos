@@ -76,7 +76,7 @@ bool MugettiSimpleScoreLib::GetPlayerPositionByName(char name[NOMTAM], int& posi
 }
 
 bool MugettiSimpleScoreLib::GetPositionScore(int position, int&score, char* name[NOMTAM]) {
-	if (position >= 0 && position<=BOARDTAM){
+	if (position >= 1 && position<=BOARDTAM){
 		score = _ScoreTable[position].sco;
 		for (int i = 0; i < NOMTAM; i++){
 			*name[i] = _ScoreTable[position].nom[i];
