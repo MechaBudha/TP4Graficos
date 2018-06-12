@@ -6,3 +6,4 @@ release
 *.snl
 \.vs\
 ipch
+MugettiSimpleScoreLib/\.vs/
