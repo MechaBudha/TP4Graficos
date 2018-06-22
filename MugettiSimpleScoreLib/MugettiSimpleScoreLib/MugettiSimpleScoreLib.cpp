@@ -20,6 +20,8 @@ bool MugettiSimpleScoreLib::RecordCurrentScore(int score, char name[NOMTAM]) {
 	}
 
 	return Sort(actual);
+
+
 }
 void MugettiSimpleScoreLib::GetMaxScore(int& score, char* name[NOMTAM]) {
 	Score _MaxScore = _ScoreTable[0];
