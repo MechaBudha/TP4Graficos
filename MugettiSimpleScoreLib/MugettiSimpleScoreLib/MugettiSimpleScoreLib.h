@@ -16,7 +16,6 @@ class MugettiSimpleScoreLib
 	bool Sort(Score actual);
 public:
 	MugettiSimpleScoreLib();
-	void Init();
 	bool RecordCurrentScore(int score, char name[NOMTAM]);
 	void GetMaxScore(int& score, char* name[NOMTAM]);
 	bool GetPlayerPositionByScore(int score, int& position);

@@ -4,15 +4,14 @@
 
 MugettiSimpleScoreLib::MugettiSimpleScoreLib()
 {
-}
-void MugettiSimpleScoreLib::Init() {
-	for (int i = 0; i < BOARDTAM; i++){
+	for (int i = 0; i < BOARDTAM; i++) {
 		_ScoreTable[i].sco = 0;
-		for (int j = 0; j < NOMTAM; j++){
+		for (int j = 0; j < NOMTAM; j++) {
 			_ScoreTable[i].nom[j] = ' ';
 		}
 	}
 }
+
 bool MugettiSimpleScoreLib::RecordCurrentScore(int score, char name[NOMTAM]) {
 	Score actual;
 	actual.sco = score;
